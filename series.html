@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-<!-- Mirrored from streamph.netlify.app/series by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 30 Apr 2025 00:45:32 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--meta card-->
@@ -15,15 +12,15 @@
       property="og:description"
       content="Watch thousands of movies for free!"
     />
-    <title>StreamPH: Watch TvShows for Free</title>
+    <title>StreamPH: Watch Movies for Free</title>
     <link rel="icon" href="favicon.png" />
     <script
       disable-devtool-auto
-      src="../external.html?link=https://cdn.jsdelivr.net/npm/disable-devtool@latest"
+      src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"
     ></script>
     <!--bootstrap-->
     <link
-      href="../cdn.jsdelivr.net/npm/bootstrap%405.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
@@ -31,13 +28,13 @@
     <!--swiperjs-->
     <link
       rel="stylesheet"
-      href="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <!--google fonts-->
-    <link rel="preconnect" href="../external.html?link=https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="../external.html?link=https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="../external.html?link=https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&amp;family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="series.css" />
@@ -46,67 +43,42 @@
     <div id="myModal" class="modal">
       <div class="iframeCon">
         <button id="modalClose">Close</button>
-        <div class="forInputs">
-          <input id="inputSeason" type="text" placeholder="Season" />
-          <input id="inputEpisode" type="text" placeholder="Episode" />
-          <button id="inputBtn">&#128269;</button>
-        </div>
-        <iframe id="myIframe" src="#" allowfullscreen></iframe>
-        <div class="videoSources">
-          <details id="vipPlayer">
-            <summary>Vip Servers <span>&#11167;</span></summary>
-            <p>No ADS</p>
-            <button id="videasyBtn" class="etoVip">Server 1</button>
-            <button id="vidgeBtn" class="etoVip">Server 2</button>
-            <button id="oneoneoneBtn" class="etoVip">Server 3</button>
-            <button id="vidfastBtn" class="etoVip">Server 4</button>
-          </details>
-          <details id="freePlayer">
-            <summary>Free Servers <span>&#11167;</span></summary>
-            <p>With ADS</p>
-            <button id="vidsrcBtn" class="etoFree">Server 1</button>
-            <button id="superembedBtn" class="etoFree">Server 2</button>
-            <button id="vidlinkBtn" class="etoFree">Server 3</button>
-            <button id="moviesapiBtn" class="etoFree">Server 4</button>
-            <button id="twoembedBtn" class="etoFree">Server 5</button>
-            <button id="vidvipBtn" class="etoFree">Server 6</button>
-          </details>
-        </div>
-        <!-- <div class="sources">
-          <button id="videasyBtn">Source 1</button>
-          <button id="vidgeBtn">Source 2</button>
-        </div>
-        <div class="sources">
-          <button id="oneoneoneBtn">Source 3</button>
-          <button id="vidfastBtn">Source 4</button>
-        </div>
-        <div class="sources">
-          <button id="vidsrcBtn">Source 5</button>
-          <button id="superembedBtn">Source 6</button>
-        </div>
-        <div class="sources">
-          <button id="vidlinkBtn">Source 7</button>
-          <button id="moviesapiBtn">Source 8</button>
-        </div>
-        <div class="sources">
-          <button id="twoembedBtn">Source 9</button>
-          <button id="vidvipBtn">Source 10</button>
-        </div> -->
-        <div class="modal-movieInfo">
-          <div class="modal-img">
-            <img id="modalImg" src="#" />
+        <iframe id="myIframe" src="" allowfullscreen></iframe>
+          <div class="videoSources">
+            <details id="vipPlayer">
+              <summary>Vip Servers <span>&#11167;</span></summary>
+              <p>No ADS</p>
+              <button id="videasyBtn" class="etoVip">Server 1</button>
+              <button id="vidgeBtn" class="etoVip">Server 2</button>
+              <button id="oneoneoneBtn" class="etoVip">Server 3</button>
+              <button id="vidfastBtn" class="etoVip">Server 4</button>
+            </details>
+            <details id="freePlayer">
+              <summary>Free Servers <span>&#11167;</span></summary>
+              <p>With ADS</p>
+              <button id="vidsrcBtn" class="etoFree">Server 1</button>
+              <button id="superembedBtn" class="etoFree">Server 2</button>
+              <button id="vidlinkBtn" class="etoFree">Server 3</button>
+              <button id="moviesapiBtn" class="etoFree">Server 4</button>
+              <button id="twoembedBtn" class="etoFree">Server 5</button>
+              <button id="vidvipBtn" class="etoFree">Server 6</button>
+            </details>
           </div>
-          <div class="modal-info">
-            <h2 id="modalTitle">Title</h2>
-            <p id="modalOverview">
-              This is the movie overview this is movie info this is movie info
-              this is movie info this is movie info this is the movie info this
-              is the movie info
-            </p>
-            <p id="modalRating">Rating</p>
-            <p id="modalYear">Year</p>
+          <div class="modal-movieInfo">
+            <div class="modal-img">
+              <img id="modalImg" src="#" />
+            </div>
+            <div class="modal-info">
+              <h2 id="modalTitle">Title</h2>
+              <p id="modalOverview">
+                This is the movie overview this is movie info this is movie info
+                this is movie info this is movie info this is the movie info this
+                is the movie info
+              </p>
+              <p id="modalRating">Rating</p>
+              <p id="modalYear">Year</p>
+            </div>
           </div>
-        </div>
       </div>
     </div>
     <div id="dynamicBg">
@@ -135,7 +107,7 @@
                 style="--bs-scroll-height: 100px;"
               >
                 <li class="nav-item">
-                  <a aria-current='page' class='nav-link active fw-bold' href='index-2.html'>Home</a
+                  <a aria-current='page' class='nav-link active fw-bold' href='/'>Home</a
                   >
                 </li>
                 <!--<li class="nav-item">
@@ -196,14 +168,11 @@
                       <a id="romance" class="dropdown-item" href="#">Romance</a>
                     </li>
                     <li>
-                      <a id="reality" class="dropdown-item" href="#">Reality</a>
-                    </li>
-                    <li>
                       <a id="scifi" class="dropdown-item" href="#">Sci-Fi</a>
                     </li>
-                    <!-- <li>
+                    <li>
                       <a id="sports" class="dropdown-item" href="#">Sports</a>
-                    </li> -->
+                    </li>
                     <li>
                       <a id="thriller" class="dropdown-item" href="#"
                         >Thriller</a
@@ -361,7 +330,7 @@
                     <li><a class="dropdown-item" href="#"></a></li>
                   </ul>
                   <li class="nav-item">
-                    <a aria-current='page' class='nav-link active movieLogo fw-bold' href='index-2.html'>Movies</a
+                    <a aria-current='page' class='nav-link active seriesLogo fw-bold' href='/series'>Tv Shows</a
                     >
                   </li>
                 </li>
@@ -490,7 +459,7 @@
     <div
       class="container text-center d-flex flex-column px-2"
     >
-      <h1 id="latesth1" class="fs-5 fw-bold">Latest TvShows</h1>
+      <h1 id="latesth1" class="fs-5 fw-bold">Latest Movies</h1>
       <div class="row d-flex justify-content-start">
         <div class="col">
           <img id="rowImage1" src="#" />
@@ -606,13 +575,11 @@
 
     <script src="series.js"></script>
     <script
-      src="../cdn.jsdelivr.net/npm/bootstrap%405.3.3/dist/js/bootstrap.bundle.min.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
   </body>
-
-<!-- Mirrored from streamph.netlify.app/series by HTTrack Website Copier/3.x [XR&CO'2017], Wed, 30 Apr 2025 00:45:33 GMT -->
 </html>
