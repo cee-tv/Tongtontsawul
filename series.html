@@ -12,7 +12,7 @@
       property="og:description"
       content="Watch thousands of movies for free!"
     />
-    <title>StreamPH: Watch Movies for Free</title>
+    <title>StreamPH: Watch TvShows for Free</title>
     <link rel="icon" href="favicon.png" />
     <script
       disable-devtool-auto
@@ -43,42 +43,67 @@
     <div id="myModal" class="modal">
       <div class="iframeCon">
         <button id="modalClose">Close</button>
+        <div class="forInputs">
+          <input id="inputSeason" type="text" placeholder="Season" />
+          <input id="inputEpisode" type="text" placeholder="Episode" />
+          <button id="inputBtn">&#128269;</button>
+        </div>
         <iframe id="myIframe" src="" allowfullscreen></iframe>
-          <div class="videoSources">
-            <details id="vipPlayer">
-              <summary>Vip Servers <span>&#11167;</span></summary>
-              <p>No ADS</p>
-              <button id="videasyBtn" class="etoVip">Server 1</button>
-              <button id="vidgeBtn" class="etoVip">Server 2</button>
-              <button id="oneoneoneBtn" class="etoVip">Server 3</button>
-              <button id="vidfastBtn" class="etoVip">Server 4</button>
-            </details>
-            <details id="freePlayer">
-              <summary>Free Servers <span>&#11167;</span></summary>
-              <p>With ADS</p>
-              <button id="vidsrcBtn" class="etoFree">Server 1</button>
-              <button id="superembedBtn" class="etoFree">Server 2</button>
-              <button id="vidlinkBtn" class="etoFree">Server 3</button>
-              <button id="moviesapiBtn" class="etoFree">Server 4</button>
-              <button id="twoembedBtn" class="etoFree">Server 5</button>
-              <button id="vidvipBtn" class="etoFree">Server 6</button>
-            </details>
+        <div class="videoSources">
+          <details id="vipPlayer">
+            <summary>Vip Servers <span>&#11167;</span></summary>
+            <p>No ADS</p>
+            <button id="videasyBtn" class="etoVip">Server 1</button>
+            <button id="vidgeBtn" class="etoVip">Server 2</button>
+            <button id="oneoneoneBtn" class="etoVip">Server 3</button>
+            <button id="vidfastBtn" class="etoVip">Server 4</button>
+          </details>
+          <details id="freePlayer">
+            <summary>Free Servers <span>&#11167;</span></summary>
+            <p>With ADS</p>
+            <button id="vidsrcBtn" class="etoFree">Server 1</button>
+            <button id="superembedBtn" class="etoFree">Server 2</button>
+            <button id="vidlinkBtn" class="etoFree">Server 3</button>
+            <button id="moviesapiBtn" class="etoFree">Server 4</button>
+            <button id="twoembedBtn" class="etoFree">Server 5</button>
+            <button id="vidvipBtn" class="etoFree">Server 6</button>
+          </details>
+        </div>
+        <!-- <div class="sources">
+          <button id="videasyBtn">Source 1</button>
+          <button id="vidgeBtn">Source 2</button>
+        </div>
+        <div class="sources">
+          <button id="oneoneoneBtn">Source 3</button>
+          <button id="vidfastBtn">Source 4</button>
+        </div>
+        <div class="sources">
+          <button id="vidsrcBtn">Source 5</button>
+          <button id="superembedBtn">Source 6</button>
+        </div>
+        <div class="sources">
+          <button id="vidlinkBtn">Source 7</button>
+          <button id="moviesapiBtn">Source 8</button>
+        </div>
+        <div class="sources">
+          <button id="twoembedBtn">Source 9</button>
+          <button id="vidvipBtn">Source 10</button>
+        </div> -->
+        <div class="modal-movieInfo">
+          <div class="modal-img">
+            <img id="modalImg" src="#" />
           </div>
-          <div class="modal-movieInfo">
-            <div class="modal-img">
-              <img id="modalImg" src="#" />
-            </div>
-            <div class="modal-info">
-              <h2 id="modalTitle">Title</h2>
-              <p id="modalOverview">
-                This is the movie overview this is movie info this is movie info
-                this is movie info this is movie info this is the movie info this
-                is the movie info
-              </p>
-              <p id="modalRating">Rating</p>
-              <p id="modalYear">Year</p>
-            </div>
+          <div class="modal-info">
+            <h2 id="modalTitle">Title</h2>
+            <p id="modalOverview">
+              This is the movie overview this is movie info this is movie info
+              this is movie info this is movie info this is the movie info this
+              is the movie info
+            </p>
+            <p id="modalRating">Rating</p>
+            <p id="modalYear">Year</p>
           </div>
+        </div>
       </div>
     </div>
     <div id="dynamicBg">
@@ -168,11 +193,14 @@
                       <a id="romance" class="dropdown-item" href="#">Romance</a>
                     </li>
                     <li>
-                      <a id="scifi" class="dropdown-item" href="#">Sci-Fi</a>
+                      <a id="reality" class="dropdown-item" href="#">Reality</a>
                     </li>
                     <li>
-                      <a id="sports" class="dropdown-item" href="#">Sports</a>
+                      <a id="scifi" class="dropdown-item" href="#">Sci-Fi</a>
                     </li>
+                    <!-- <li>
+                      <a id="sports" class="dropdown-item" href="#">Sports</a>
+                    </li> -->
                     <li>
                       <a id="thriller" class="dropdown-item" href="#"
                         >Thriller</a
@@ -330,7 +358,7 @@
                     <li><a class="dropdown-item" href="#"></a></li>
                   </ul>
                   <li class="nav-item">
-                    <a aria-current='page' class='nav-link active seriesLogo fw-bold' href='/series'>Tv Shows</a
+                    <a aria-current='page' class='nav-link active movieLogo fw-bold' href='/'>Movies</a
                     >
                   </li>
                 </li>
@@ -459,7 +487,7 @@
     <div
       class="container text-center d-flex flex-column px-2"
     >
-      <h1 id="latesth1" class="fs-5 fw-bold">Latest Movies</h1>
+      <h1 id="latesth1" class="fs-5 fw-bold">Latest TvShows</h1>
       <div class="row d-flex justify-content-start">
         <div class="col">
           <img id="rowImage1" src="#" />
